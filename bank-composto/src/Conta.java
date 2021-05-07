@@ -1,5 +1,6 @@
 class Conta{
-	double saldo;
+	// private significa que somente a class pode ler e modificar
+	private double saldo;
 	int agencia;
 	int numero;
 	Cliente titular;
@@ -27,5 +28,9 @@ class Conta{
 			return true;
 		} 
 		return false;
+	}
+	
+	public double getSaldo(){
+		return this.saldo;
 	}
 }
